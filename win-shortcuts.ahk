@@ -1,6 +1,6 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 
-#Q::{
+#W::{
     Send("!{F4}")
 }
 
@@ -10,6 +10,15 @@
 
 #S::{
     Send("#+S")
+}
+
+#+S::{
+    return
+}
+
+#Q::  {
+    WinMinimize("A")
+    return
 }
 
 ^#R::{
